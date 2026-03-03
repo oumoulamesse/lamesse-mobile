@@ -29,7 +29,7 @@ const products = [
   {
     id: 2,
     name: "iPhone 11",
-    image: "/images/products/iphone 11.png",
+    image: "/images/products/iphone-11.png",
     variants: [
       { version: "Simple", storage: 64, sim: "SIM", price: 95000 },
       { version: "Simple", storage: 128, sim: "SIM", price: 105000 },
@@ -92,7 +92,7 @@ const products = [
   {
     id: 7,
     name: "iPhone 16",
-    image: "/images/products/iphone 16 Pro.png",
+    image: "/images/products/iphone-16-Pro.png",
     variants: [
       { version: "Simple", storage: 128, sim: "eSIM", price: 350000 },
       { version: "Simple", storage: 128, sim: "SIM", price: 380000 },
