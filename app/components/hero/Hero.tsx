@@ -12,32 +12,33 @@ const Hero = () => {
           <div className='flex gap-2 items-center'>
             <span className='w-3 h-3 rounded-full bg-blue-600'></span>
             <span className='font-medium text-gray-600 text-sm'>
-              Lamesse Mobile
+              Boutique spécialisée Apple • Sénégal
             </span>
           </div>
 
           <h1 className='text-gray-900 font-bold text-4xl md:text-5xl md:leading-[1.15]'>
-            Les meilleurs smartphones. <br />
-            <span className='text-blue-600'>Au meilleur prix.</span>
+            iPhone authentiques <br />
+            <span className='text-blue-600'>Disponibles au Sénégal.</span>
           </h1>
 
           <p className='text-gray-600 text-lg font-medium'>
-            Découvrez notre sélection de smartphones et tablettes
-            performants, fiables et garantis.
+            Découvrez notre sélection d’iPhone originaux,
+            testés et garantis, avec stockage 64GB, 128GB et 256GB.
+            Livraison rapide à Dakar et partout au Sénégal.
           </p>
 
-          <Link
+          <a
            href="/#products" 
             className='py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 px-8'>
-            Voir la boutique
-          </Link>
+            Voir les iPhone disponibles
+          </a>
 
         </div>
 
         <div className="md:col-span-6 col-span-12 relative">
           <Image
             src="/images/hero/image-3.png"
-            alt="Smartphones"
+            alt="iPhone disponibles au Sénégal"
             width={500}
             height={400}
             quality={100}

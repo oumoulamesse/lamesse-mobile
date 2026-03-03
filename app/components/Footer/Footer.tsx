@@ -13,16 +13,18 @@ export default function Footer() {
           <h3 className="text-2xl font-bold mb-4 tracking-wide">
             Lamesse<span className="text-primary">Mobile</span>
           </h3>
+
           <p className="text-white/60 text-sm leading-relaxed mb-6">
-            Smartphones et tablettes 100% originaux avec garantie
-            et livraison rapide partout au Sénégal.
+            Boutique spécialisée dans la vente d’iPhone authentiques au Sénégal.
+            Produits originaux testés et vérifiés, avec garantie et livraison rapide.
           </p>
 
           {/* SOCIALS */}
           <div className="flex gap-4">
             <a
-              href="https://wa.me/221771234567"
+              href="https://wa.me/221774813790"
               target="_blank"
+              rel="noopener noreferrer"
               className="bg-green-500/10 p-3 rounded-full hover:bg-green-500 transition"
             >
               <FaWhatsapp className="text-green-400 hover:text-white" />
@@ -54,19 +56,23 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/boutique" className="hover:text-primary transition">
-                Boutique
-              </Link>
-            </li>
-            <li>
-              <Link href="/partners" className="hover:text-primary transition">
-                Partenariats
-              </Link>
+              <a href="#products" className="hover:text-primary transition">
+                iPhone disponibles
+              </a>
             </li>
             <li>
               <Link href="/contact" className="hover:text-primary transition">
                 Contact
               </Link>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/221774813790"
+                target="_blank"
+                className="hover:text-primary transition"
+              >
+                WhatsApp
+              </a>
             </li>
           </ul>
         </div>
@@ -74,9 +80,15 @@ export default function Footer() {
         {/* CONTACT */}
         <div>
           <h4 className="font-semibold mb-4 text-white">Contact</h4>
+
           <p className="text-white/60 text-sm mb-3">
             Dakar, Sénégal
           </p>
+
+          <p className="text-white/60 text-sm mb-3">
+            Disponible 7j/7
+          </p>
+
           <a
             href="https://wa.me/221774813790"
             target="_blank"
@@ -88,27 +100,29 @@ export default function Footer() {
           </a>
 
           <p className="text-white/40 text-xs mt-4">
-            Réponse rapide 7j/7
+            Assistance rapide et sécurisée
           </p>
         </div>
 
         {/* NEWSLETTER */}
         <div>
-          <h4 className="font-semibold mb-4 text-white">Newsletter</h4>
+          <h4 className="font-semibold mb-4 text-white">
+            Restez informé
+          </h4>
 
           <div className="flex flex-col gap-3">
             <input
               type="email"
-              placeholder="oumoulamesse@gmail.com"
-              className="w-full px-2 py-2 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-primary"
+              placeholder="Votre adresse email"
+              className="w-full px-3 py-2 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-primary"
             />
             <button className="w-full bg-primary py-2 rounded-md hover:bg-blue-700 transition font-medium">
-              S'abonner
+              S’abonner
             </button>
           </div>
 
           <p className="text-white/40 text-xs mt-3">
-            Promotions exclusives et nouveautés.
+            Nouveaux modèles et offres exclusives.
           </p>
         </div>
 
@@ -116,7 +130,8 @@ export default function Footer() {
 
       {/* COPYRIGHT */}
       <div className="border-t border-white/10 mt-14 pt-6 text-center text-white/40 text-sm">
-        © {new Date().getFullYear()} Lamesse Mobile. Tous droits réservés.
+        © {new Date().getFullYear()} Lamesse Mobile – Boutique iPhone au Sénégal.
+        Tous droits réservés.
       </div>
     </footer>
   );
