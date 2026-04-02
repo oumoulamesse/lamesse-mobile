@@ -1,6 +1,6 @@
 import Navbar  from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
-import Products from "./components/Products/Products";
+import Products from "./components/products/Products";
 import WhyChoose from "./components/whychoose/WhyChoose";
 import Brands from "./components/Brands/Brands";
 import Footer from "./components/Footer/Footer";
