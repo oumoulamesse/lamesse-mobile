@@ -53,7 +53,7 @@ const PRODUCTS: Product[] = [
   {
     id: 1,
     name: "iPhone XR",
-    image: "/images/products/iphonexr.png",
+    image: "/images/products/iphone-xr-mauve.png",
     variants: [
       { version: "XR", storage: 64,  sim: "SIM", price: 85000 },
       { version: "XR", storage: 128, sim: "SIM", price: 90000 },
@@ -62,7 +62,7 @@ const PRODUCTS: Product[] = [
   {
     id: 2,
     name: "iPhone 11",
-    image: "/images/products/iphone-11.png",
+    image: "/images/products/iphone-11-pro-max.png",
     variants: [
       { version: "Simple",  storage: 64,  sim: "SIM", price: 95000  },
       { version: "Simple",  storage: 128, sim: "SIM", price: 105000 },
@@ -75,7 +75,7 @@ const PRODUCTS: Product[] = [
   {
     id: 3,
     name: "iPhone 12",
-    image: "/images/products/iphone 12.png",
+    image: "/images/products/iphone-12.png",
     variants: [
       { version: "Simple",  storage: 64,  sim: "SIM", price: 120000 },
       { version: "Simple",  storage: 128, sim: "SIM", price: 125000 },
@@ -88,7 +88,7 @@ const PRODUCTS: Product[] = [
   {
     id: 4,
     name: "iPhone 13",
-    image: "/images/products/iphone 13.png",
+    image: "/images/products/Iphone-13-pro-max-.png",
     variants: [
       { version: "Simple",  storage: 128, sim: "SIM", price: 165000 },
       { version: "Pro",     storage: 128, sim: "SIM", price: 225000 },
@@ -100,7 +100,7 @@ const PRODUCTS: Product[] = [
   {
     id: 5,
     name: "iPhone 14",
-    image: "/images/products/iPhone-14-Pro.png",
+    image: "/images/products/iphone-14-pro-.png",
     variants: [
       { version: "Simple",  storage: 128, sim: "SIM",  price: 195000 },
       { version: "Plus",    storage: 128, sim: "SIM",  price: 225000 },
@@ -114,7 +114,7 @@ const PRODUCTS: Product[] = [
   {
     id: 6,
     name: "iPhone 15",
-    image: "/images/products/iphone 15.png",
+    image: "/images/products/iphone-15.png",
     variants: [
       { version: "Plus", storage: 128, sim: "SIM",  price: 315000 },
       { version: "Plus", storage: 256, sim: "SIM",  price: 330000 },
@@ -125,7 +125,7 @@ const PRODUCTS: Product[] = [
   {
     id: 7,
     name: "iPhone 16",
-    image: "/images/products/iphone-16-Pro.png",
+    image: "/images/products/iphone-16-.png",
     variants: [
       { version: "Simple",  storage: 128, sim: "eSIM", price: 350000 },
       { version: "Simple",  storage: 128, sim: "SIM",  price: 380000 },
@@ -140,7 +140,7 @@ const PRODUCTS: Product[] = [
   {
     id: 8,
     name: "iPhone 17",
-    image: "/images/products/iphone 17.png",
+    image: "/images/products/iphone-17.png",
     variants: [
       { version: "Simple",  storage: 128, sim: "SIM", price: 0 },
       { version: "Pro",     storage: 256, sim: "SIM", price: 0 },
@@ -435,7 +435,7 @@ function TradeModal({
             <div className="mt-3 bg-blue-50 border border-blue-100 rounded-xl px-4 py-2.5
                             flex items-center justify-between">
               <span className="text-xs text-blue-500 font-medium">Prix sélectionné</span>
-              <span className="text-sm font-bold text-blue-700">{fmt(variant.price)}</span>
+              <span className="text-sm font-bold text-blue-200">{fmt(variant.price)}</span>
             </div>
           </div>
 

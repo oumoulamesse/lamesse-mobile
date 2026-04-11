@@ -5,9 +5,9 @@ export const products = [
     description:
       "L’iPhone XR combine puissance et autonomie avec un écran Liquid Retina et la puce A12 Bionic.",
     images: [
+      "/images/products/iphone-xr.png",
       "/images/products/iphonexr.png",
-      "/images/products/iphonexr.png",
-      "/images/products/iphonexr.png",
+      "/images/products/iphone-xr.png",
     ],
 
     versions: [
@@ -27,9 +27,9 @@ export const products = [
     description:
       "L’iPhone 11 offre un double appareil photo puissant, une excellente autonomie et la puce A13 Bionic.",
     images: [
-      "/images/products/iphone 11.png",
-      "/images/products/iphone 11.png",
-      "/images/products/iphone 11.png",
+      "/images/products/iphone-11-pro-max.png",
+      "/images/products/iphone-11-c.png",
+      "/images/products/_iPhone-11-Case.png",
     ],
 
     versions: [
@@ -63,9 +63,10 @@ export const products = [
     description:
       "L’iPhone 12 introduit la 5G avec un design élégant, un écran OLED Super Retina XDR et la puce A14.",
     images: [
-      "/images/products/iphone 12.png",
-      "/images/products/iphone 12.png",
-      "/images/products/iphone 12.png",
+      "/images/products/iphone-12.png",
+      "/images/products/iphone-12-Promax.png",
+      "/images/products/_iphones-12-pro-max.png",
+       "/images/products/iphone-12-pro-max!!.png",
     ],
 
     versions: [
@@ -99,9 +100,9 @@ export const products = [
     description:
       "L’iPhone 13 améliore les performances photo, l’autonomie et la puissance avec la puce A15 Bionic.",
     images: [
-      "/images/products/iphone 13.png",
-      "/images/products/iphone 13.png",
-      "/images/products/iphone 13.png",
+      "/images/products/iphone-13-pro-max.png",
+      "/images/products/iPhone-13-Pro-Max-128Go.png",
+      "/images/products/iphone 13-pro - pink.png",
     ],
 
     versions: [
@@ -134,9 +135,9 @@ export const products = [
     description:
       "L’iPhone 14 propose un design amélioré, un appareil photo avancé et une sécurité renforcée.",
     images: [
-      "/images/products/iPhone-14-Pro.png",
-      "/images/products/iPhone-14-Pro.png",
-      "/images/products/iPhone-14-Pro.png",
+      "/images/products/iphone-14-pro-.png",
+      "/images/products/iphone 14-pro-mauve.png",
+      "/images/products/iphone-14.png",
     ],
 
     versions: [
@@ -174,8 +175,8 @@ export const products = [
     description:
       "L’iPhone 15 introduit l’USB-C, une caméra améliorée et la puce A16 pour des performances supérieures.",
     images: [
-      "/images/products/iphone 15.png",
-      "/images/products/iphone 15.png",
+      "/images/products/_iPhone-15ProMax.png",
+      "/images/products/iphone-15.png",
       "/images/products/iphone 15.png",
     ],
 
@@ -204,9 +205,9 @@ export const products = [
     description:
       "L’iPhone 16 propose des performances extrêmes avec la nouvelle puce Apple et des caméras améliorées.",
     images: [
-      "/images/products/iphone 16 Pro.png",
-      "/images/products/iphone 16 Pro.png",
-      "/images/products/iphone 16 Pro.png",
+      "/images/products/iphone-16-.png",
+      "/images/products/iphone-16-pro-max.png",
+      "/images/products/iphone-16-A.png",
     ],
 
     versions: [
