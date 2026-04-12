@@ -14,6 +14,7 @@ import {
   ArrowRight,
   Search,
   Sparkles,
+  Tablet,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -22,6 +23,7 @@ import { FaWhatsapp } from "react-icons/fa";
 ───────────────────────────────────────────── */
 
 type SIM = "SIM" | "eSIM";
+type Category = "iphone" | "ipad";
 
 interface Variant {
   version: string;
@@ -34,6 +36,7 @@ interface Product {
   id: number;
   name: string;
   image: string;
+  category: Category;
   variants: Variant[];
 }
 
@@ -50,10 +53,12 @@ interface TradeForm {
 ───────────────────────────────────────────── */
 
 const PRODUCTS: Product[] = [
+  /* ── iPhones ── */
   {
     id: 1,
     name: "iPhone XR",
     image: "/images/products/iphone-xr-mauve.png",
+    category: "iphone",
     variants: [
       { version: "XR", storage: 64,  sim: "SIM", price: 85000 },
       { version: "XR", storage: 128, sim: "SIM", price: 90000 },
@@ -63,6 +68,7 @@ const PRODUCTS: Product[] = [
     id: 2,
     name: "iPhone 11",
     image: "/images/products/iphone-11-pro-max.png",
+    category: "iphone",
     variants: [
       { version: "Simple",  storage: 64,  sim: "SIM", price: 95000  },
       { version: "Simple",  storage: 128, sim: "SIM", price: 105000 },
@@ -76,6 +82,7 @@ const PRODUCTS: Product[] = [
     id: 3,
     name: "iPhone 12",
     image: "/images/products/iphone-12.png",
+    category: "iphone",
     variants: [
       { version: "Simple",  storage: 64,  sim: "SIM", price: 120000 },
       { version: "Simple",  storage: 128, sim: "SIM", price: 125000 },
@@ -89,6 +96,7 @@ const PRODUCTS: Product[] = [
     id: 4,
     name: "iPhone 13",
     image: "/images/products/Iphone-13-pro-max-.png",
+    category: "iphone",
     variants: [
       { version: "Simple",  storage: 128, sim: "SIM", price: 165000 },
       { version: "Pro",     storage: 128, sim: "SIM", price: 225000 },
@@ -101,6 +109,7 @@ const PRODUCTS: Product[] = [
     id: 5,
     name: "iPhone 14",
     image: "/images/products/iphone-14-pro-.png",
+    category: "iphone",
     variants: [
       { version: "Simple",  storage: 128, sim: "SIM",  price: 195000 },
       { version: "Plus",    storage: 128, sim: "SIM",  price: 225000 },
@@ -115,6 +124,7 @@ const PRODUCTS: Product[] = [
     id: 6,
     name: "iPhone 15",
     image: "/images/products/iphone-15.png",
+    category: "iphone",
     variants: [
       { version: "Plus", storage: 128, sim: "SIM",  price: 315000 },
       { version: "Plus", storage: 256, sim: "SIM",  price: 330000 },
@@ -126,6 +136,7 @@ const PRODUCTS: Product[] = [
     id: 7,
     name: "iPhone 16",
     image: "/images/products/iphone-16-.png",
+    category: "iphone",
     variants: [
       { version: "Simple",  storage: 128, sim: "eSIM", price: 350000 },
       { version: "Simple",  storage: 128, sim: "SIM",  price: 380000 },
@@ -141,10 +152,79 @@ const PRODUCTS: Product[] = [
     id: 8,
     name: "iPhone 17",
     image: "/images/products/iphone-17.png",
+    category: "iphone",
     variants: [
       { version: "Simple",  storage: 128, sim: "SIM", price: 0 },
       { version: "Pro",     storage: 256, sim: "SIM", price: 0 },
       { version: "Pro Max", storage: 512, sim: "SIM", price: 0 },
+    ],
+  },
+
+  /* ── iPads ── */
+  {
+    id: 101,
+    name: "iPad 9ème gén.",
+    image: "/images/products/ipad-9-th-a.png",
+    category: "ipad",
+    variants: [
+      { version: "WiFi",         storage: 64,  sim: "SIM", price: 95000  },
+      { version: "WiFi",         storage: 256, sim: "SIM", price: 115000 },
+      { version: "WiFi + Cellular", storage: 64, sim: "SIM", price: 115000 },
+    ],
+  },
+  {
+    id: 102,
+    name: "iPad 10ème gén.",
+    image: "/images/products/ipad-10-th.png",
+    category: "ipad",
+    variants: [
+      { version: "WiFi",            storage: 64,  sim: "SIM",  price: 145000 },
+      { version: "WiFi",            storage: 256, sim: "SIM",  price: 165000 },
+      { version: "WiFi + Cellular", storage: 64,  sim: "eSIM", price: 175000 },
+    ],
+  },
+  {
+    id: 103,
+    name: "iPad Air 5ème gén.",
+    image: "/images/products/ipad-5.png",
+    category: "ipad",
+    variants: [
+      { version: "WiFi",            storage: 64,  sim: "SIM",  price: 190000 },
+      { version: "WiFi",            storage: 256, sim: "SIM",  price: 220000 },
+      { version: "WiFi + Cellular", storage: 64,  sim: "eSIM", price: 230000 },
+    ],
+  },
+  {
+    id: 104,
+    name: "iPad Pro 11\"",
+    image: "/images/products/ipad-pro-th-11.png",
+    category: "ipad",
+    variants: [
+      { version: "WiFi",            storage: 128, sim: "SIM",  price: 280000 },
+      { version: "WiFi",            storage: 256, sim: "SIM",  price: 310000 },
+      { version: "WiFi + Cellular", storage: 128, sim: "eSIM", price: 330000 },
+    ],
+  },
+  {
+    id: 105,
+    name: "iPad Pro 12.9\"",
+    image: "/images/products/ipad-pro-2022-12.png",
+    category: "ipad",
+    variants: [
+      { version: "WiFi",            storage: 128, sim: "SIM",  price: 350000 },
+      { version: "WiFi",            storage: 256, sim: "SIM",  price: 390000 },
+      { version: "WiFi + Cellular", storage: 256, sim: "eSIM", price: 420000 },
+    ],
+  },
+  {
+    id: 106,
+    name: "iPad Mini 6",
+    image: "/images/products/ipad-mini-6.png",
+    category: "ipad",
+    variants: [
+      { version: "WiFi",            storage: 64,  sim: "SIM",  price: 160000 },
+      { version: "WiFi",            storage: 256, sim: "SIM",  price: 195000 },
+      { version: "WiFi + Cellular", storage: 64,  sim: "eSIM", price: 190000 },
     ],
   },
 ];
@@ -192,6 +272,45 @@ function SearchBar({
 }
 
 /* ─────────────────────────────────────────────
+   CATEGORY TABS
+───────────────────────────────────────────── */
+
+function CategoryTabs({
+  active,
+  onChange,
+}: {
+  active: Category;
+  onChange: (c: Category) => void;
+}) {
+  const tabs: { key: Category; label: string; icon: React.ElementType }[] = [
+    { key: "iphone", label: "iPhone", icon: Smartphone },
+    { key: "ipad",   label: "iPad",   icon: Tablet     },
+  ];
+
+  return (
+    <div className="flex justify-center mb-10">
+      <div className="inline-flex bg-white border border-gray-200 rounded-2xl p-1.5 shadow-sm gap-1">
+        {tabs.map(({ key, label, icon: Icon }) => (
+          <button
+            key={key}
+            onClick={() => onChange(key)}
+            className={`inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-semibold
+                        transition-all duration-200
+                        ${active === key
+                          ? "bg-blue-600 text-white shadow-sm shadow-blue-200"
+                          : "text-gray-500 hover:text-gray-800 hover:bg-gray-50"
+                        }`}
+          >
+            <Icon size={15} />
+            {label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ─────────────────────────────────────────────
    PRODUCT CARD
 ───────────────────────────────────────────── */
 
@@ -202,8 +321,8 @@ function ProductCard({
   product: Product;
   onTrade: (p: Product) => void;
 }) {
-  const price       = minPrice(product.variants);
-  const isNew       = product.id >= 7;
+  const price        = minPrice(product.variants);
+  const isNew        = product.id === 7 || product.id === 8;
   const isComingSoon = price === 0;
 
   const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
@@ -260,7 +379,7 @@ function ProductCard({
             {product.name}
           </h3>
           <p className={`font-bold text-base mt-1 ${isComingSoon ? "text-amber-600" : "text-blue-600"}`}>
-            {isComingSoon ? "Prix à confirmer" : `Dès ${fmt(price)}`}
+            {isComingSoon ? "Prix à confirmer" : `${fmt(price)}`}
           </p>
         </Link>
 
@@ -273,8 +392,8 @@ function ProductCard({
           <button
             onClick={() => onTrade(product)}
             className="flex-1 inline-flex items-center justify-center gap-1.5
-                       text-xs font-semibold bg-blue-600 hover:bg-blue-700
-                       text-white rounded-xl py-2.5 shadow-sm shadow-blue-200
+                       text-xs font-semibold text-[#185FA5] bg-[#E6F1FB]
+             border border-[#B5D4F4]  rounded-xl py-2.5 shadow-sm shadow-blue-200
                        transition-colors duration-200"
           >
             <Repeat size={13} />
@@ -435,7 +554,7 @@ function TradeModal({
             <div className="mt-3 bg-blue-50 border border-blue-100 rounded-xl px-4 py-2.5
                             flex items-center justify-between">
               <span className="text-xs text-blue-500 font-medium">Prix sélectionné</span>
-              <span className="text-sm font-bold text-blue-200">{fmt(variant.price)}</span>
+              <span className="text-sm font-bold text-blue-700">{fmt(variant.price)}</span>
             </div>
           </div>
 
@@ -501,14 +620,17 @@ function TradeModal({
 
 export default function Products() {
   const [search,       setSearch]       = useState("");
+  const [category,     setCategory]     = useState<Category>("iphone");
   const [tradeProduct, setTradeProduct] = useState<Product | null>(null);
 
   const filtered = useMemo(
     () =>
-      PRODUCTS.filter((p) =>
-        p.name.toLowerCase().includes(search.toLowerCase())
+      PRODUCTS.filter(
+        (p) =>
+          p.category === category &&
+          p.name.toLowerCase().includes(search.toLowerCase())
       ),
-    [search]
+    [search, category]
   );
 
   return (
@@ -523,12 +645,15 @@ export default function Products() {
             Notre catalogue
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">
-            Nos iPhone disponibles
+            Nos appareils disponibles
           </h2>
           <p className="text-gray-500 mt-3 text-sm max-w-sm mx-auto">
             Reconditionnés · Garantis 12 mois · Livrés à Dakar
           </p>
         </div>
+
+        {/* Category Tabs */}
+        <CategoryTabs active={category} onChange={(c) => { setCategory(c); setSearch(""); }} />
 
         <SearchBar value={search} onChange={setSearch} />
 
