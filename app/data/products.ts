@@ -97,7 +97,7 @@ export const products = [
     description:
       "Un bond en autonomie et en photo. La **puce A15 Bionic** assure des performances redoutables. Le **mode Cinématique** donne un rendu cinéma à vos vidéos. Les Pro intègrent un **écran ProMotion 120 Hz** adaptatif et un **zoom optique 3×** pour des portraits bluffants.",
     images: [
-      "/images/products/iphone-13-pro-max.png",
+      "/images/products/Iphone-13-pro-max-.png",
       "/images/products/iPhone-13-Pro-Max-128Go.png",
       "/images/products/iphone 13-pro - pink.png",
     ],
