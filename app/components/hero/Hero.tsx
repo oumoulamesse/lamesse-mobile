@@ -350,8 +350,11 @@ export default function Hero() {
 
         {/* RIGHT */}
         <div
-          className={`relative ${p.bg} dark:bg-[#111] flex flex-col items-center
-                      justify-end overflow-hidden transition-colors duration-500`}
+          className="relative flex flex-col items-center justify-end overflow-hidden"
+    style={{
+        background: `linear-gradient(135deg, #f2ededf0 0%, ${p.accent}18 45%, ${p.accent}40 100%)`,
+        transition: 'background 0.5s ease',
+  }}
         >
           {/* Glow */}
           <div className="absolute w-[320px] h-[320px] bg-blue-500/10 blur-3xl rounded-full" />

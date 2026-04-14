@@ -57,7 +57,7 @@ const PRODUCTS: Product[] = [
   {
     id: 1,
     name: "iPhone XR",
-    image: "/images/products/iphone-xr-mauve.png",
+    image: "/images/products/iPhone-XR.png",
     category: "iphone",
     variants: [
       { version: "XR", storage: 64,  sim: "SIM", price: 85000 },
@@ -135,7 +135,7 @@ const PRODUCTS: Product[] = [
   {
     id: 7,
     name: "iPhone 16",
-    image: "/images/products/iphone-16-.png",
+    image: "/images/products/iphone-16-A.png",
     category: "iphone",
     variants: [
       { version: "Simple",  storage: 128, sim: "eSIM", price: 350000 },
